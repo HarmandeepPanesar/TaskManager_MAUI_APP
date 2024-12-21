@@ -3,7 +3,13 @@
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        TaskManagerDatabase database;
 
+        public MainPage(TaskManagerDatabase todoItemDatabase)
+        {
+            InitializeComponent();
+            database = todoItemDatabase;
+        }
         public MainPage()
         {
             InitializeComponent();
